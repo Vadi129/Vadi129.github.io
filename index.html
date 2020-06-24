@@ -1,0 +1,92 @@
+<!--felső sorban terminal-new terminal-ezzelmeg lehet nyitni egy parancssort
+cd ..               kijjebbi mappába lépés
+cd . \valami\       beljebbi mappába lépés
+git clone https://github.com/Vadi129/Vadi129.github.io.git        klónozás githubról kell bemásolni a címet
+git add .           minden hozzáadása fájlok ne csak saját mappában legyenek benne
+git commit -m "valami"     mentés "valami"= megjegyzés
+git pull            biztonság szempontjából letöltés
+git push            visszatöltés
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">     <!-- minden betűfajtát használjon-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--initial-scale: hányszoros nagyítás -->
+    <title>Egy szuper oldal</title> <!-- a lap címe-->
+    <link rel="stylesheet" href="css/General.css">
+
+</head>
+
+<body>
+    <h2><a href="/Cupinak.html">
+        <img width="100" src="https://www.publicdomainpictures.net/pictures/70000/velka/3d-heart-1389043069cMa.jpg" alt="Mi">
+    </a></h2>
+    
+<!--felsorolás-->
+    <ul> <!-- rendeztlen (pontok) felsorolás-->
+        <li> <!--felsoroloás egyes elemei-->
+            <a class="page" href="/">Home</a>  <!--home oldalra átugrás-->
+        </li>
+        <li>
+            <a class="page" href="/pages/Products.html">Products</a>
+        </li>
+        <li>
+            <a class="page" href="/pages/orders.html">Orders</a><!-- / és valami mappa akkor a gyökérből kiindulva abban a mappában keresi-->
+        </li>
+        <li>
+            <a class="page" href="/about.html">Abouts</a><!--csak / akkor fájlt abban a mappában keresi ahol épp van(most gyökérben)-->
+        </li>
+    </ul>
+    <h1>Fantastic Burger</h1> <!--fejléc cím-->
+    
+    <p> It is <i>very important</i> <b>information</b>.</p> <!--i dőlt betű; b félkövér-->
+
+    <h2 id="content">Content</h2> <!--url-be beírva mőgé #el ide ugrik-->
+
+    <ul>
+        <li>
+            Meat lover
+            <ul><!--fesoroláson belüli felsorolás (mindenképpen elemen belül kell lennie!)-->
+                <li>Beef</li>
+                <li>Pork</li>
+                <li>Turkey</li>
+            </ul>
+        </li>
+        <li>Vegetarian</li>
+        <li>Piedone</li>
+    </ul>
+
+    <h2>Step of Order</h2>
+    <ol><!-- rendezett (számok) felsorolás-->
+        <li>Coose burger</li> <!--felsoroloás egyes elemei-->
+        <li>Bu it</li>
+        <li>Give your address</li>
+        <li>Eat</li>
+    </ol>
+<!--behivatkozás-->
+    <p><!--bekezdés-->
+        <!--más oldal behivatkozása, úgy hogy új lapon nyitja meg-->
+        <a target="blank" 
+        href="https://eljamanak.hu/termek/nagy-kihivas-hamburger-ha-mindent-megeszel-visszakapod-az-arat/"> <!--behivatkazott url-->
+        Élj a mának <!--kiírt cím-->
+        </a>
+    </p>
+    <p>
+        <a target="blank"
+            href="https://eljamanak.hu/termek/nagy-kihivas-hamburger-ha-mindent-megeszel-visszakapod-az-arat/">
+            <img width="100" src="img/hamburger.jpg" alt="tasty burger"><!--behivatkozás helyére tett kép mérete, elérése, ha nem tölt be heyére írt szöveg-->
+        </a>
+    </p>
+    <p><!--oldalra átugrás, előző helyére nyitja-->
+        <a href="pages/orders.html">
+            Orders <!--megjelenített név-->
+        </a>
+    </p>
+    <p><!--kép betétel-->
+        <img width="100"  src="https://eljamanak.hu/wp-content/uploads/2016/11/HAMBI-1.jpg" alt="tasty burger"> 
+    </p> 
+
+</body>
+
+</html>

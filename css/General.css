@@ -1,0 +1,28 @@
+html {
+    background-color: #f0f0f0;
+}
+body {
+    background-color: #c0c0c0;
+    background-image: url(../img/backgorund.jpg);
+    background-position: center;
+/*    background-repeat: repeat-x; ---vízszintesen ismétli csak no-repeat nem ismétli*/
+/*    background: url(../img/stonehenge.jpg) no-repeat;  ---egyben az egész */
+}
+
+/*lapváltás*/
+.page:hover { /* ha ráviszem az egeret csináljon keretet*/
+    box-shadow: 2px 2px 3px;
+}
+.page { 
+    font-size: 25px;
+}
+
+/*fejléc*/
+h1 {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 900;
+    text-transform: uppercase; /*uppercase-nagybetű, lowercase-kisbetű*/
+}

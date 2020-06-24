@@ -1,0 +1,61 @@
+div.login-div {/* nincs szóköz---div ami egyben a logindiv osztályba is tartozik*/
+    padding: 15px; /*elem nagysága*/
+    border: solid 1px #c0c0c0; /* keret*/
+    box-shadow: 0 0 5px #777777; /* árnyék*/
+    display: inline-block; /* elhelyezés*/
+}
+
+.login-div input{ /* van szóköz ---login-diven belüli input*/
+    display: block;
+    margin-bottom: 7px;
+}
+
+
+.login-div textarea{ 
+    display: block;
+    margin-bottom: 7px;
+}
+
+
+.login-div input[type="email"] { /* attribútum alapján történő keresés*/
+    border: solid 1px blue;
+}
+
+.login-div input[name="password"] {
+    border: solid 1px red;
+}
+
+.login-div textarea[name="comment"] {
+    border: solid 1px green;
+}
+
+.login-div button:hover { /* ha ráviszem az egeret csináljon keretet*/
+    box-shadow: 2px 2px 3px;
+}
+
+input[type="button"]:hover { /* ha ráviszem az egeret csináljon keretet*/
+    box-shadow: 2px 2px 3px;
+}
+
+
+.login-div input:focus {/* ha rákattintok csináljon árnyékot*/
+    box-shadow: 2px 2px 5px;
+    border: none; /* beépített border kiszedése*/
+ }
+
+.login-div textarea:focus {/* ha rákattintok csináljon árnyékot*/
+    box-shadow: 2px 2px 5px;
+    border: none; /* beépített border kiszedése*/
+ }
+
+ul li:last-child{ /* lista utolsó elemének beállítása*/
+    font-family: Arial;
+    text-decoration: underline;
+}
+#list1:first-child{ /* lista első elemének beállítása*/
+     color: red;
+}
+
+#list2:nth-child(2){ /* lista második elemének beállítása*/
+     color: blue;
+}

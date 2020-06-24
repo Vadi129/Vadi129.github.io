@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "Oswald-s";
+    src: url("fonts/Oswald/Oswald-Stencil.ttf");
+    font-weight: 900;
+}
+/* */
+@font-face {
+    font-family: "Oswald-e-l";
+    src: url("fonts/Oswald/Oswald-Extra-LightItalic.ttf");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Piedra2";
+    src: url("fonts/Piedra/Piedra-Regular.ttf");
+}
+@font-face {
+    font-family: "Pangolin";
+    src: url("fonts/Pangolin/Pangolin-Regular.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&family=Piedra&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+
+
+h2  {
+    font-family: "Piedra2", cursive;
+    font-size: 60px;
+}
+h3  {
+    font-family: 'Ubuntu', Arial;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+#SkillsHeader {
+    color: orangered; 
+}
+
+#SkillsHeader2 {
+    color: purple;
+}
+
+p {
+    color:rgb(51, 168, 28);
+    font-size: 20px;
+    font-family: "Oswald-s";
+    font-weight: bold;
+    margin-left: 20px;
+}
+.név {
+    font-style: italic;
+    font-size: 30px;
+}
+
+.Szöveg {
+    color:rgb(151, 65, 65);
+    font-size: 20px;
+    font-family: "Arial";
+    margin-left: 40px;
+    text-align: justify;
+    max-width: 75%;
+}
+.img-div {
+    background-color: rgb(173, 183, 230, 0.8);
+}
+.light {
+    background-color: aqua;
+}
+
+#Colordiv {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
+}
+
+img {
+    width: 9%;
+    margin: 5%;
+    box-shadow: 3px 3px 10px rgb(5, 73, 5);
+}
+
+#img1 {
+    display: none;
+}
+#img2 {
+    display: block;
+}
+#img3 {
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+#img4 {
+    position: fixed;
+    top: 10px;
+    left: 80px;
+}
+#img5 {
+    position: absolut;
+    top: 10px;
+    left: 10px;
+}
