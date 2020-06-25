@@ -5,7 +5,7 @@ body {
     background-color: #c0c0c0;
     background-image: url(../img/backgorund.jpg);
     background-position: center;
-/*    background-repeat: repeat-x; ---vízszintesen ismétli csak no-repeat nem ismétli*/
+/*    background-repeat: repeat-x; ---vízszintesen ismétli csak, no-repeat nem ismétli*/
 /*    background: url(../img/stonehenge.jpg) no-repeat;  ---egyben az egész */
 }
 
@@ -25,4 +25,16 @@ h1 {
     line-height: 20px;
     font-weight: 900;
     text-transform: uppercase; /*uppercase-nagybetű, lowercase-kisbetű*/
+}
+
+#Cupi {
+    position: relative;
+    top: -50px;
+    left: 86.4%;
+    /*left:93.3% ;*/
+}
+
+.Login{
+    position: relative;
+    left: -30%;
 }

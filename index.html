@@ -11,43 +11,117 @@ git push            visszatöltés
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">     <!-- minden betűfajtát használjon-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--initial-scale: hányszoros nagyítás -->
-    <title>Egy szuper oldal</title> <!-- a lap címe-->
+    <meta charset="UTF-8"> <!-- minden betűfajtát használjon-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--initial-scale: hányszoros nagyítás -->
+    <title>Home</title> <!-- a lap címe-->
     <link rel="stylesheet" href="css/General.css">
+    <!--online-->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">-->
+    <!--saját-->
+    <link rel="stylesheet" href="../bootstrap-4.5.0-dist/css/bootstrap.min.css">
 
 </head>
 
 <body>
-    <h2><a href="/Cupinak.html">
-        <img width="100" src="https://www.publicdomainpictures.net/pictures/70000/velka/3d-heart-1389043069cMa.jpg" alt="Mi">
-    </a></h2>
-    
-<!--felsorolás-->
-    <ul> <!-- rendeztlen (pontok) felsorolás-->
-        <li> <!--felsoroloás egyes elemei-->
-            <a class="page" href="/">Home</a>  <!--home oldalra átugrás-->
-        </li>
-        <li>
-            <a class="page" href="/pages/Products.html">Products</a>
-        </li>
-        <li>
-            <a class="page" href="/pages/orders.html">Orders</a><!-- / és valami mappa akkor a gyökérből kiindulva abban a mappában keresi-->
-        </li>
-        <li>
-            <a class="page" href="/about.html">Abouts</a><!--csak / akkor fájlt abban a mappában keresi ahol épp van(most gyökérben)-->
-        </li>
-    </ul>
-    <h1>Fantastic Burger</h1> <!--fejléc cím-->
-    
-    <p> It is <i>very important</i> <b>information</b>.</p> <!--i dőlt betű; b félkövér-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--ez a gomb vált mobil és teljes nézet között-->
 
-    <h2 id="content">Content</h2> <!--url-be beírva mőgé #el ide ugrik-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/pages/Products.html">Products <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/Contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/orders.html">Orders</a>
+                </li>
+            </ul>
+            <!--lenyíló menű, kell hozzá javascript
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+             -->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <h1>Fantastic Burger</h1>
+    <!--fejléc cím-->
+    <h2>Login
+        <!--
+                  <a id="Cupi" href="/Cupinak.html">
+            <img width="50" src="/img/szív1.png"
+                alt="Mi">
+        </a>  
+        -->
+
+    </h2>
+    <div class="Login">
+        <div class="row">
+            <div class="col-4"></div>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter Email" value="kiss.janos@gmailcom" readonly>
+                    <!--readonly!!!!-->
+                    <small id="emailHelp" class="form-text text-muted">
+                        We'll never share your email with anyone else.
+                    </small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="col-4"></div>
+    </div>
+    </div>
+    <p> It is <i>very important</i> <b>information</b>.</p>
+    <!--i dőlt betű; b félkövér-->
+
+    <p>
+        <!--kép betétel-->
+        <img width="200" src="https://eljamanak.hu/wp-content/uploads/2016/11/HAMBI-1.jpg" alt="tasty burger">
+    </p>
+
+    <h2 id="content">Content</h2>
+    <!--url-be beírva mőgé #el ide ugrik-->
 
     <ul>
         <li>
             Meat lover
-            <ul><!--fesoroláson belüli felsorolás (mindenképpen elemen belül kell lennie!)-->
+            <ul>
+                <!--fesoroláson belüli felsorolás (mindenképpen elemen belül kell lennie!)-->
                 <li>Beef</li>
                 <li>Pork</li>
                 <li>Turkey</li>
@@ -58,34 +132,57 @@ git push            visszatöltés
     </ul>
 
     <h2>Step of Order</h2>
-    <ol><!-- rendezett (számok) felsorolás-->
-        <li>Coose burger</li> <!--felsoroloás egyes elemei-->
+    <ol>
+        <!-- rendezett (számok) felsorolás-->
+        <li>Coose burger</li>
+        <!--felsoroloás egyes elemei-->
         <li>Bu it</li>
         <li>Give your address</li>
         <li>Eat</li>
     </ol>
-<!--behivatkozás-->
-    <p><!--bekezdés-->
+    <!--behivatkozás-->
+    <p>
+        <!--bekezdés-->
         <!--más oldal behivatkozása, úgy hogy új lapon nyitja meg-->
-        <a target="blank" 
-        href="https://eljamanak.hu/termek/nagy-kihivas-hamburger-ha-mindent-megeszel-visszakapod-az-arat/"> <!--behivatkazott url-->
-        Élj a mának <!--kiírt cím-->
+        <a target="blank"
+            href="https://eljamanak.hu/termek/nagy-kihivas-hamburger-ha-mindent-megeszel-visszakapod-az-arat/">
+            <!--behivatkazott url-->
+            Élj a mának
+            <!--kiírt cím-->
         </a>
     </p>
     <p>
         <a target="blank"
             href="https://eljamanak.hu/termek/nagy-kihivas-hamburger-ha-mindent-megeszel-visszakapod-az-arat/">
-            <img width="100" src="img/hamburger.jpg" alt="tasty burger"><!--behivatkozás helyére tett kép mérete, elérése, ha nem tölt be heyére írt szöveg-->
+            <img width="100" src="img/hamburger.jpg" alt="tasty burger">
+            <!--behivatkozás helyére tett kép mérete, elérése, ha nem tölt be heyére írt szöveg-->
         </a>
     </p>
-    <p><!--oldalra átugrás, előző helyére nyitja-->
-        <a href="pages/orders.html">
-            Orders <!--megjelenített név-->
-        </a>
-    </p>
-    <p><!--kép betétel-->
-        <img width="100"  src="https://eljamanak.hu/wp-content/uploads/2016/11/HAMBI-1.jpg" alt="tasty burger"> 
-    </p> 
+
+    <!--felsorolás-->
+    <div id="page">
+        <ul>
+            <!-- rendeztlen (pontok) felsorolás-->
+            <li>
+                <!--felsoroloás egyes elemei-->
+                <a class="page" href="/">Home</a>
+                <!--home oldalra átugrás-->
+            </li>
+            <li>
+                <a class="page" href="/pages/Products.html">Products</a>
+            </li>
+            <li>
+                <a class="page" href="/pages/orders.html">Orders</a>
+                <!-- / és valami mappa akkor a gyökérből kiindulva abban a mappában keresi-->
+            </li>
+            <li>
+                <a class="page" href="/about.html">Abouts</a>
+                <!--csak / akkor fájlt abban a mappában keresi ahol épp van(most gyökérben)-->
+            </li>
+            <li>
+                <a class="page" href="/pages/Contact.html">Contact</a>
+            </li>
+        </ul>
 
 </body>
 

@@ -1,35 +1,37 @@
-div.login-div {/* nincs szóköz---div ami egyben a logindiv osztályba is tartozik*/
+div.order-div {/* nincs szóköz---div ami egyben a.orderdiv osztályba is tartozik*/
     padding: 15px; /*elem nagysága*/
     border: solid 1px #c0c0c0; /* keret*/
     box-shadow: 0 0 5px #777777; /* árnyék*/
     display: inline-block; /* elhelyezés*/
+    position: relative;
+    left: 3%;
 }
 
-.login-div input{ /* van szóköz ---login-diven belüli input*/
+.order-div input{ /* van szóköz --.order-diven belüli input*/
     display: block;
     margin-bottom: 7px;
 }
 
 
-.login-div textarea{ 
+.order-div textarea{ 
     display: block;
     margin-bottom: 7px;
 }
 
 
-.login-div input[type="email"] { /* attribútum alapján történő keresés*/
+.order-div input[type="email"] { /* attribútum alapján történő keresés*/
     border: solid 1px blue;
 }
 
-.login-div input[name="password"] {
+.order-div input[name="password"] {
     border: solid 1px red;
 }
 
-.login-div textarea[name="comment"] {
+.order-div textarea[name="comment"] {
     border: solid 1px green;
 }
 
-.login-div button:hover { /* ha ráviszem az egeret csináljon keretet*/
+.order-div button:hover { /* ha ráviszem az egeret csináljon keretet*/
     box-shadow: 2px 2px 3px;
 }
 
@@ -38,12 +40,12 @@ input[type="button"]:hover { /* ha ráviszem az egeret csináljon keretet*/
 }
 
 
-.login-div input:focus {/* ha rákattintok csináljon árnyékot*/
+.order-div input:focus {/* ha rákattintok csináljon árnyékot*/
     box-shadow: 2px 2px 5px;
     border: none; /* beépített border kiszedése*/
  }
 
-.login-div textarea:focus {/* ha rákattintok csináljon árnyékot*/
+.order-div textarea:focus {/* ha rákattintok csináljon árnyékot*/
     box-shadow: 2px 2px 5px;
     border: none; /* beépített border kiszedése*/
  }

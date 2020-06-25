@@ -4,14 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Products</title>
     <!---->
     <link rel="stylesheet" href="../css/General.css">
     <link rel="stylesheet" href="../css/Products.css">
+    <link rel="stylesheet" href="../bootstrap-4.5.0-dist/css/bootstrap.min.css">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/pages/Products.html">Products <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/Contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/orders.html">Orders</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
 
+    <h1>Products</h1>
+    <h2>Bio</h2>
+    <p>Összefoglaló valami</p>
+
+    <h3 id="SkillsHeader">Skills</h3>
+    <p class="Szöveg">
+        <span class="név">John Doe.</span>
+        He is a programmer
+    </p>
+
+    <h3 id="SkillsHeader2">Skills2</h3>
+    <p class="Szöveg">A Lorem Ipsum egy egyszerû szövegrészlete, szövegutánzata a betûszedõ és nyomdaiparnak. A Lorem
+        Ipsum az 1500-as évek óta standard szövegrészletként szolgált az iparban; mikor egy ismeretlen nyomdász
+        összeállította a betûkészletét és egy példa-könyvet vagy szöveget nyomott papírra, ezt használta. Nem csak 5
+        évszázadot élt túl, de az elektronikus betûkészleteknél is változatlanul megmaradt. Az 1960-as években
+        népszerûsítették a Lorem Ipsum részleteket magukbafoglaló Letraset lapokkal, és legutóbb softwarekkel mint
+        például az Aldus Pagemaker.</p>
+
+    <div id="Colordiv"></div>
+
+    <p>Images</p>
+    <div class="img-div">
+        <img id="img1" src="../img/hamburger.jpg" alt="programmer">
+        <img id="img2" src="../img/sandwich.jpg" alt="programmer">
+        <img id="img3" src="../img/hamburger.jpg" alt="programmer">
+        <img id="img4" src="../img/sandwich.jpg" alt="programmer">
+        <img id="img5" src="../img/hamburger.jpg" alt="programmer">
+    </div>
+    <div class="img-div light">
+        <img src="../img/hamburger.jpg" alt="programmer">
+        <img src="../img/sandwich.jpg" alt="programmer">
+        <img src="../img/hamburger.jpg" alt="programmer">
+        <img src="../img/sandwich.jpg" alt="programmer">
+        <img src="../img/hamburger.jpg" alt="programmer">
+    </div>
     <ul>
         <li>
             <a class="page" href="/">Home</a>
@@ -25,42 +88,10 @@
         <li>
             <a class="page" href="/about.html">Abouts</a>
         </li>
+        <li>
+            <a class="page" href="/pages/Contact.html">Contact</a>
+        </li>
     </ul>
-    <h1>Products</h1>
-    <h2>Bio</h2>
-    <p>Összefoglaló valami</p>
-
-<h3 id="SkillsHeader">Skills</h3>
-    <p class="Szöveg">
-        <span class="név">John Doe.</span>
-        He is a programmer
-    </p>
-
-<h3 id="SkillsHeader2">Skills2</h3>
-    <p class="Szöveg">A Lorem Ipsum egy egyszerû szövegrészlete, szövegutánzata a betûszedõ és nyomdaiparnak. A Lorem
-        Ipsum az 1500-as évek óta standard szövegrészletként szolgált az iparban; mikor egy ismeretlen nyomdász
-        összeállította a betûkészletét és egy példa-könyvet vagy szöveget nyomott papírra, ezt használta. Nem csak 5
-        évszázadot élt túl, de az elektronikus betûkészleteknél is változatlanul megmaradt. Az 1960-as években
-        népszerûsítették a Lorem Ipsum részleteket magukbafoglaló Letraset lapokkal, és legutóbb softwarekkel mint
-        például az Aldus Pagemaker.</p>
-
-<div id="Colordiv"></div>
-
-<p>Images</p>
-    <div class="img-div">
-        <img id="img1" src="../img/hamburger.jpg" alt="programmer">
-        <img id="img2" src="../img/sandwich.jpg" alt="programmer">
-        <img id="img3"  src="../img/hamburger.jpg" alt="programmer">
-        <img id="img4" src="../img/sandwich.jpg" alt="programmer">
-        <img id="img5" src="../img/hamburger.jpg" alt="programmer">
-    </div>
-    <div class="img-div light">
-        <img src="../img/hamburger.jpg" alt="programmer">
-        <img src="../img/sandwich.jpg" alt="programmer">
-        <img src="../img/hamburger.jpg" alt="programmer">
-        <img src="../img/sandwich.jpg" alt="programmer">
-        <img src="../img/hamburger.jpg" alt="programmer">
-    </div>
 </body>
 
 </html>

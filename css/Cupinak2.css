@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Oswald-s";
+    src: url("fonts/Oswald/Oswald-Stencil.ttf");
+    font-weight: 900;
+}
+/* */
+@font-face {
+    font-family: "Oswald-e-l";
+    src: url("fonts/Oswald/Oswald-Extra-LightItalic.ttf");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Piedra2";
+    src: url("fonts/Piedra/Piedra-Regular.ttf");
+}
+@font-face {
+    font-family: "Pangolin";
+    src: url("fonts/Pangolin/Pangolin-Regular.ttf");
+}    
+@font-face {
+    font-family: "Dancing";
+    src: url("fonts/DancingScript-VariableFont_wght.ttf");
+}    
+body{
+    background-image: url(../img/MI2.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+h1 {
+text-align: center;
+font-family: 'Piedra2', Arial;
+}
+
+#eltolt {
+    position: relative;
+    left: 20%;
+    font-family: 'Dancing', Arial;
+    font-size: 40px;
+}
+#eltolt4 {
+    position: relative;
+    left: 10%;
+    font-family: 'Dancing', Arial;
+    font-size: 30px;
+}
+#eltolt1 {
+    position: relative;
+    left: 10.5%;
+}
+#eltolt2 {
+    position: relative;
+    left: 50%;
+}
+#eltolt3 {
+    position: relative;
+    left: 30%;
+    font-family: 'Pangolin', Arial;
+}
+#szív {
+    position: fixed;
+    left: -5% ;
+    top: -2%;
+}
+
+#Cupi {
+    position: relative;
+    top: -50px;
+    left: 86.4%;
+    /*left:93.3% ;*/
+}

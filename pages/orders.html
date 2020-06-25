@@ -4,31 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Orders</title>
     <link rel="stylesheet" href="../css/General.css">
     <link rel="stylesheet" href="../css/Order.css">
+    <link rel="stylesheet" href="../bootstrap-4.5.0-dist/css/bootstrap.min.css">
 </head>
 
 <body>
-    <ul>
-        <li>
-            <a class="page" href="/">Home</a>
-        </li>
-        <li>
-            <a class="page" href="/pages/Products.html">Products</a>
-        </li>
-        <li>
-            <a class="page" href="/pages/orders.html">Orders</a>
-        </li>
-        <li>
-            <a class="page" href="/about.html">Abouts</a>
-        </li>
-    </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/pages/Products.html">Products <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/Contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/orders.html">Orders</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
     <h1>Orders</h1>
     <form>
         <fieldset>
-            <legend>Személyes Adatok</legend>
-            <div class="login-div">
+            <legend>Rendelési adatok</legend>
+            <div class="order-div">
                 <div class="form-group">
                     <label for="name">név: *</label>
                     <!-- a for=""= id vel lehet, hogy ha a label nevére kattint akkor is beleugrik a mezőbe-->
@@ -43,7 +58,7 @@
                     <textarea name="comment" id="comment" rows="5"></textarea>
                 </div>
                 <div class="form-group">
-                    <button class="submit-btn">Login</button>
+                    <button class="submit-btn">Rendben</button>
                 </div>
             </div>
         </fieldset>
@@ -91,6 +106,59 @@
         <li id="list2">tej</li>
         <li id="list3">szotyi</li>
     </ul>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <h3>Hamburger rendelés</h3>
+                <form action="">
+                    <div class="form-group">
+                        <label for="">Feltét</label>
+                        <input type="text" class="form-control" name="top-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Mennyiség</label>
+                        <input type="number" class="form-control" name="amount-input">
+                    </div>
+                    <div class="form-group">
+                        Fizetendő
+                        <span class="show-amount">
+                            0
+                        </span>
+                        Ft
+                    </div>
+                    <button onclick="calcAmount()" type="button" class="btn btn-primary">Megrendelés</button>
+                </form>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+    <!--let s =document.querySelector("input[name='amount-input']");--><!--változó létrehozása és a beírt szöveg kivétele-->
+    <ul>
+        <li>
+            <a class="page" href="/">Home</a>
+        </li>
+        <li>
+            <a class="page" href="/pages/Products.html">Products</a>
+        </li>
+        <li>
+            <a class="page" href="/pages/orders.html">Orders</a>
+        </li>
+        <li>
+            <a class="page" href="/about.html">Abouts</a>
+        </li>
+        <li>
+            <a class="page" href="/pages/Contact.html">Contact</a>
+        </li>
+    </ul>
+
+      <!--  <script>
+      alert("Hello JS! kattints az ok gombra");
+  </script>-->
+  <script src="../js/script.js">
+  </script>
+
 </body>
 
 </html>
