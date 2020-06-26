@@ -66,6 +66,15 @@
         <fieldset>
             <legend>Termék Adatai</legend>
             <div>
+                <div>
+                    <!--type=radio (csak egy jelölhető ki) name ugyan annak kell lennie lehet-->
+                    <input checked id="ketchup" name="extra" type="radio" value="100">
+                    <label for="ketchup">Csirke [1200 Ft]</label>
+                </div>
+                <div>
+                    <input checked id="mustar" name="extra" type="radio" value="200">
+                    <label for="mustar">Marha [1500 Ft]</label>
+                </div>
                 <span>Extra feltét</span>
                 <div>
                     <!--type=checkbox (több is kijelölhető) name különböző lehet-->
@@ -74,26 +83,18 @@
                 </div>
                 <div>
                     <input checked id="cheese" name="cheese" type="checkbox" value="300">
-                    <label for="cheese">feltét 2</label>
+                    <label for="cheese">Bacon [+200 Ft]</label>
                 </div>
                 <div>
                     <input checked id="double-cheese" name="double-cheese" type="checkbox" value="6000">
-                    <label for="double-cheese">feltét 3</label>
+                    <label for="double-cheese">Tojás [+300 Ft]</label>
                 </div>
                 <div>
                     <input checked id="meat" name="meat" type="checkbox" value="1000">
-                    <label for="meat">feltét 4</label>
+                    <label for="meat">Extra sajt [+400 Ft]</label>
                 </div>
 
-                <div>
-                    <!--type=radio (csak egy jelölhető ki) name ugyan annak kell lennie lehet-->
-                    <input checked id="ketchup" name="extra" type="radio" value="100">
-                    <label for="ketchup">feltét 5</label>
-                </div>
-                <div>
-                    <input checked id="mustar" name="extra" type="radio" value="200">
-                    <label for="mustar">feltét 6</label>
-                </div>
+
             </div>
         </fieldset>
         <div>
@@ -115,11 +116,14 @@
                 <form action="">
                     <div class="form-group">
                         <label for="">Feltét</label>
-                        <input type="text" class="form-control" name="top-input">
+                        <input type="text" name="top-input" class="form-control" >
                     </div>
                     <div class="form-group">
                         <label for="">Mennyiség</label>
-                        <input type="number" class="form-control" name="amount-input">
+                        <input type="number" name="amount-input" class="form-control" value="1" >
+                        <small class="form-text text-muted">
+                            Minimum 1, maximum 10db.
+                        </small>
                     </div>
                     <div class="form-group">
                         Fizetendő
@@ -156,8 +160,9 @@
       <!--  <script>
       alert("Hello JS! kattints az ok gombra");
   </script>-->
-  <script src="../js/script.js">
-  </script>
+  <script src="../js/Validation.js"></script>
+  <script src="../js/algo.js"></script>
+
 
 </body>
 
