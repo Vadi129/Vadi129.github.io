@@ -4,16 +4,18 @@ function calcAmount() {
     let price=1200;
     let amountInput = document.querySelector("input[name='amount-input']");
     let amountNumber = parseInt(amountInput.value); /*egész számra kerekít az értékét*/
-    
+
     /*üres mező esetén NaN kerülne a Ft helyére
     if (isNaN(amountNumber))  {
         amountNumber = 0;}*/
         //egyszerűsítése
         amountNumber =  isNaN(amountNumber) ? 0 : amountNumber; //ha igaz a kiértékelés akkor a ? utáni értéket kapja, ha nem akkor a : utánit
-        
+
         showSumPrice(price, amountNumber);
     }
-    
+function burgertype() {
+            
+}
 function showSumPrice (pricePerProduct=1000, amountNumber=1) { // hibakiküszöbölés, alapérték beállítás
     amountNumber = amountNumber || 0; //hibaa kiküszöbölése, ha amount.. = NaN akkor 0 lesz ha nem egyenlő akkor önmaga
     let showAmount= document.querySelector("span.show-amount"); //a span típusú show amounnt class értékhez létrehozok egy változót(amit majd kiír)
