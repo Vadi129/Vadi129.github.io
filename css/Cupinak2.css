@@ -27,7 +27,7 @@ body{
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
-    max-width: 65%;
+    max-width: 55%;
 }
 
 h1 {
@@ -37,20 +37,31 @@ font-family: 'Piedra2', Arial;
 
 #eltolt {
     position: relative;
-    left: 35%;
+    left: 45%;
     font-family: 'Dancing', Arial;
     font-size: 40px;
 }
 #eltolt4 {
     position: relative;
-    left: 35%;
+    left: 45%;
     font-family: 'Dancing', Arial;
     font-size: 30px;
 
 }
-#eltolt1 {
+#szívfa  {
     position: relative;
-    left: 50%;
+    left: -35%;
+    top: -200px;
+}
+#szivecske {
+    position: relative;
+    left: 150%;
+    top: -150px;
+}
+#PinguinSzivecske {
+    position: relative;
+     left: 10%;
+     top: -50px;
 }
 #meglepi {
     position: relative;
@@ -59,7 +70,7 @@ font-family: 'Piedra2', Arial;
 }
 #eltolt3 {
     position: relative;
-    left: 30%;
+    left: 53%;
     font-family: 'Pangolin', Arial;
 }
 #szív {
