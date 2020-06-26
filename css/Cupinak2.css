@@ -27,6 +27,7 @@ body{
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
+    max-width: 65%;
 }
 
 h1 {
@@ -36,24 +37,25 @@ font-family: 'Piedra2', Arial;
 
 #eltolt {
     position: relative;
-    left: 20%;
+    left: 35%;
     font-family: 'Dancing', Arial;
     font-size: 40px;
 }
 #eltolt4 {
     position: relative;
-    left: 10%;
+    left: 35%;
     font-family: 'Dancing', Arial;
     font-size: 30px;
-    line-height: 10px;
+
 }
 #eltolt1 {
     position: relative;
-    left: 10.5%;
-}
-#eltolt2 {
-    position: relative;
     left: 50%;
+}
+#meglepi {
+    position: relative;
+    left: 80%;
+    font-size: 20px;
 }
 #eltolt3 {
     position: relative;
@@ -63,7 +65,7 @@ font-family: 'Piedra2', Arial;
 #szív {
     position: fixed;
     left: -5% ;
-    top: -2%;
+    top: 1%;
 }
 
 #Cupi {

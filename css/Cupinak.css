@@ -27,6 +27,7 @@ body{
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
+    max-width: 50%;
 }
 
 h1 {
@@ -57,12 +58,12 @@ font-family: 'Pangolin', Arial;
 #szív {
     position: fixed;
     left: -5% ;
-    top: -2%;
+    top: 1%;
 }
 
 #Cupi {
     position: relative;
     top: -50px;
-    left: 86.4%;
+    left: 185%;
     /*left:93.3% ;*/
 }
