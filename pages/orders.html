@@ -68,12 +68,12 @@
             <div>
                 <div>
                     <!--type=radio (csak egy jelölhető ki) name ugyan annak kell lennie lehet-->
-                    <input checked id="ketchup" name="extra" type="radio" value="100">
-                    <label for="ketchup">Csirke [1200 Ft]</label>
+                    <input checked id="Csirke" name="extra" type="radio" value="100">
+                    <label for="Csirke">Csirke [1200 Ft]</label>
                 </div>
                 <div>
-                    <input checked id="mustar" name="extra" type="radio" value="200">
-                    <label for="mustar">Marha [1500 Ft]</label>
+                    <input checked id="Marha" name="extra" type="radio" value="200">
+                    <label for="Marha">Marha [1500 Ft]</label>
                 </div>
                 <span>Extra feltét</span>
                 <div>
@@ -113,32 +113,37 @@
             <div class="col-3"></div>
             <div class="col-6">
                 <h3>Hamburger rendelés</h3>
-                <form action="">
+                <div class="alert alert-info alert-dismissible fade show" role="alert">
+                    <strong>Kedves vásárlónk!</strong> 
+                    A rendeléshez kérjük töltse ki az űrlapot.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="orderForm" action="">
                     <div class="form-group">
                         <label for="">Feltét</label>
-                        <input type="text" name="top-input" class="form-control" >
+                        <select id="topInput" name="top-input" class="form-control">
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="">Mennyiség</label>
-                        <input type="number" name="amount-input" class="form-control" value="1" >
+                        <input type="number" name="amount-input" class="form-control" value="1">
                         <small class="form-text text-muted">
                             Minimum 1, maximum 10db.
                         </small>
                     </div>
                     <div class="form-group">
-                        Fizetendő
-                        <span class="show-amount">
-                            0
-                        </span>
-                        Ft
+                        Fizetendő: <span class="show-amount">0</span>Ft
                     </div>
-                    <button onclick="calcAmount()" type="button" class="btn btn-primary">Megrendelés</button>
+                    <button onclick="calcAmount()" type="submit" class="btn btn-primary">Megrendelés</button>
                 </form>
             </div>
             <div class="col-3"></div>
         </div>
     </div>
-    <!--let s =document.querySelector("input[name='amount-input']");--><!--változó létrehozása és a beírt szöveg kivétele-->
+    <!--let s =document.querySelector("input[name='amount-input']");-->
+    <!--változó létrehozása és a beírt szöveg kivétele-->
     <ul>
         <li>
             <a class="page" href="/">Home</a>
@@ -157,11 +162,11 @@
         </li>
     </ul>
 
-      <!--  <script>
+    <!--  <script>
       alert("Hello JS! kattints az ok gombra");
   </script>-->
-  <script src="../js/Validation.js"></script>
-  <script src="../js/algo.js"></script>
+    <script src="../js/Orders.js"></script>
+    <script src="../js/algo.js"></script>
 
 
 </body>
